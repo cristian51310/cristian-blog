@@ -26,16 +26,12 @@ const BlogLayoutOne = ({ blog }) => {
           className="px-6 text-xs sm:text-sm py-1 sm:py-2 "
         />
         <Link href={blog.url} className="mt-6">
-          <h2 className="font-bold capitalize text-sm xs:text-base sm:text-xl md:text-2xl text-amber-200 mt-2 sm:mt-4">
+          <h2 className="font-bold capitalize text-2xl text-amber-200 mt-2 sm:mt-4">
             <TextDecoration>
               {blog.title}
             </TextDecoration>
           </h2>
         </Link>
-
-        <p className='inline-block mt-4 md:text-lg font-in text-light'>
-          {blog.description}
-        </p>
       </div>
     </div>
   );

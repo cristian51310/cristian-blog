@@ -2,12 +2,12 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <main className="my-24 w-full dark:bg-dark flex justify-center">
-      <div className="flex flex-col items-center justify-center">
-        <h1 className="text-dark dark:text-light text-6xl font-bold w-full xl:text-8xl text-center">
+    <main className="my-24 w-full flex justify-center">
+      <div className="flex flex-col items-center justify-center text-dark dark:text-light">
+        <h1 className=" text-6xl font-bold w-full xl:text-8xl text-center">
           404
         </h1>
-        <h2 className="text-dark dark:text-light text-5xl font-bold w-full text-center mt-4 tracking-wide">
+        <h2 className=" text-5xl font-bold w-full text-center mt-4 tracking-wide">
           Pagina no encontrada!
         </h2>
         <Link

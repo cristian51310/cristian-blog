@@ -64,7 +64,7 @@ const CategoryPage = ({ params }) => {
       <Categories categories={allCategories} currentSlug={params.slug} />
 
       <Section>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {blogs.map((blog, index) => (
             <article key={index} className="col-span-1 row-span-1 relative">
               <BlogLayoutThree blog={blog} />

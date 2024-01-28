@@ -2,6 +2,7 @@ import { sortBlogs } from "@/src/utils";
 import Link from "next/link";
 import BlogLayoutThree from "../Blog/BlogLayoutThree";
 import Section from "../section";
+import { FaArrowRight } from "react-icons/fa";
 
 const RecentPosts = ({ blogs }) => {
   const sortedBlogs = sortBlogs(blogs);
@@ -16,6 +17,7 @@ const RecentPosts = ({ blogs }) => {
           className="inline-block font-medium text-accent dark:text-accentDark underline underline-offset-8 text-base md:text-lg"
         >
           Ver todas las publicaciones
+          <FaArrowRight className="inline-block ml-2 w-3 h-3" />
         </Link>
       </div>
 
