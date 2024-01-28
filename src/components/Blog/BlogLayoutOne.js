@@ -10,6 +10,7 @@ const BlogLayoutOne = ({ blog }) => {
       <div
         className="absolute top-0 left-0 bottom-0 right-0 h-full bg-gradient-to-b from-transparent from-0% to-dark/90 rounded-md z-10"
       />
+
       <Image
         src={blog.image.filePath.replace("../public", "")}
         placeholder="blur"
@@ -22,7 +23,9 @@ const BlogLayoutOne = ({ blog }) => {
       />
 
       <div className="w-full absolute bottom-0 p-4 xs:p-6 sm:p-10 z-20">
-        <Tag link={`/categories/${slug(blog.tags[0])}`} name={blog.tags[0]}
+        <Tag
+          link={`/categories/${slug(blog.tags[0])}`}
+          name={blog.tags[0]}
           className="px-6 text-xs sm:text-sm py-1 sm:py-2 "
         />
         <Link href={blog.url} className="mt-6">
