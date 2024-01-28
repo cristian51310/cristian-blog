@@ -8,7 +8,7 @@ import GithubSlugger from "github-slugger"
 
 const Blog = defineDocumentType(() => ({
   name: "Blog",
-  filePathPattern: "**/**/*.mdx",
+  filePathPattern: "**/*.mdx",
   contentType: "mdx",
   fields: {
     title: {
@@ -67,7 +67,6 @@ const Blog = defineDocumentType(() => ({
           }
 
         })
-
 
         return headings;
       }
