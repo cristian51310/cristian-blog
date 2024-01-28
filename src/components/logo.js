@@ -6,7 +6,7 @@ const Logo = () => {
   return (
     <Link href="/" className="flex items-center text-dark dark:text-light">
 
-      <div className="w-12 rounded-full overflow-hidden mr-2 md:mr-4">
+      <div className="w-12 rounded-full overflow-hidden mr-2 md:mr-4 border border-black/20">
         <Image
           src={profileImg}
           alt="Cristian Blog Logo"

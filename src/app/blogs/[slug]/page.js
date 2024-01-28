@@ -94,7 +94,7 @@ export default function BlogPage({ params }) {
 
       <article>
         <Section>
-          <div className="mb-8 text-center relative w-full h-[50vh] bg-dark">
+          <div className="mb-8 text-center relative w-full h-[50vh] bg-dark rounded-md overflow-hidden">
             <div className="w-full z-10 flex flex-col items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
               <Tag
                 name={blog.tags[0]}

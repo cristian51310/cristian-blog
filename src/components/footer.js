@@ -17,9 +17,9 @@ const Footer = () => {
           &copy; Todos los derechos reservados.
         </span>
         <div className="text-center">
-          Hecho con amor ❤️ por{" "}
+          Hecho con ❤️ por{" "}
           <a href="https://cristianfigueroa.dev" className="underline" target="_blank">
-            Cristian Ruben Figueroa
+            Cristian Ruben
           </a>
         </div>
       </div>

@@ -14,7 +14,8 @@ const BlogLayoutOne = ({ blog }) => {
       <Image
         src={blog.image.filePath.replace("../public", "")}
         alt={blog.title}
-        fill
+        width={blog.image.width}
+        height={blog.image.height}
         className="w-full h-full object-center object-cover rounded-md"
       />
 
@@ -25,7 +26,7 @@ const BlogLayoutOne = ({ blog }) => {
           className="px-6 text-xs sm:text-sm py-1 sm:py-2 "
         />
         <Link href={blog.url} className="mt-6">
-          <h2 className="font-bold capitalize text-sm xs:text-base sm:text-xl md:text-2xl text-light mt-2 sm:mt-4">
+          <h2 className="font-bold capitalize text-sm xs:text-base sm:text-xl md:text-2xl text-amber-200 mt-2 sm:mt-4">
             <TextDecoration>
               {blog.title}
             </TextDecoration>

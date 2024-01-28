@@ -1,8 +1,8 @@
 import Header from "@/src/components/header";
 import { cx } from "@/src/utils";
-import { ThemeProvider } from "../components/theme-provider";
 import { Inter, Manrope } from "next/font/google";
 import Footer from "../components/footer";
+import { ThemeProvider } from "../components/theme-provider";
 import siteMetadata from "../utils/siteMetaData";
 import "./globals.css";
 
@@ -55,15 +55,20 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={cx(
           inter.variable,
           manrope.variable,
-          "font-mr bg-light dark:bg-dark"
+          "font-mr bg-neutral-200 dark:bg-neutral-900"
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
           <Header />
           {children}
           <Footer />

@@ -1,29 +1,37 @@
 "use client"
 
 import { useTheme } from 'next-themes';
-import { cx } from "../utils";
-import { MoonIcon, SunIcon } from "./Icons";
+import { useState } from 'react';
+import { FaMoon, FaSun } from "react-icons/fa";
 
 export default function ThemeSwitch() {
+  const [flipState, setFlipState] = useState(false);
   const { setTheme, theme } = useTheme();
 
-  console.log(theme);
+  const handleClick = () => {
+    setFlipState(!flipState)
+    setTheme(flipState ? "light" : "dark")
+  }
 
   return (
-    <button
-      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-      className={cx(
-        "w-10 h-10 flex items-center justify-center rounded-md p-2.5",
-        theme === "light" && "bg-dark/30 text-purple-600",
-        theme === "dark" && "bg-light/30 text-amber-500"
-      )}
-      aria-label="theme-switcher"
-    >
+    <div>
       {theme === "light" ? (
-        <MoonIcon />
+        <button
+          onClick={handleClick}
+          className="w-10 h-10 flex items-center justify-center rounded-md p-2.5 bg-dark/30"
+          aria-label="theme-switcher"
+        >
+          <FaMoon className='w-6 h-6 text-purple-500' />
+        </button>
       ) : (
-        <SunIcon />
+        <button
+          onClick={handleClick}
+          className="w-10 h-10 flex items-center justify-center rounded-md p-2.5 bg-light/30"
+          aria-label="theme-switcher"
+        >
+          <FaSun className='w-6 h-6 text-amber-500' />
+        </button>
       )}
-    </button>
+    </div>
   )
 }
