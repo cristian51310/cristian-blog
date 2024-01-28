@@ -94,7 +94,7 @@ export default function BlogPage({ params }) {
 
       <article>
         <Section>
-          <div className="mb-8 text-center relative w-full h-[50vh] bg-dark rounded-md overflow-hidden">
+          <div className="md:mb-8 mb-4 text-center relative w-full h-[50vh] bg-dark rounded-md overflow-hidden">
             <div className="w-full z-10 flex flex-col items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
               <Tag
                 name={blog.tags[0]}
@@ -121,7 +121,7 @@ export default function BlogPage({ params }) {
 
           <BlogDetails blog={blog} slug={params.slug} />
 
-          <div className="grid grid-cols-12 gap-y-8 lg:gap-8 mt-8">
+          <div className="grid grid-cols-12 gap-y-8 lg:gap-8 mt-4 md:mt-8">
             <div className="col-span-12 lg:col-span-4">
               <details
                 className="border border-dark/30 dark:border-light/30 text-dark dark:text-light rounded-md p-4 sticky top-6 max-h-[85vh] overflow-hidden overflow-y-auto"
@@ -144,7 +144,7 @@ export default function BlogPage({ params }) {
                             data-[level=three]:pl-3 sm:data-[level=three]:pl-3
                             flex items-center justify-start
                           ">
-                            
+
                           {heading.level === "three" && (
                             <span className="flex w-1 h-1 rounded-full bg-dark mr-2">
                               &nbsp;

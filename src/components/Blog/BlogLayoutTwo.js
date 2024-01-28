@@ -20,9 +20,11 @@ const BlogLayoutTwo = ({ blog }) => {
       </Link>
 
       <div className="col-span-12 lg:col-span-6 w-full">
-        <span className="inline-block w-full uppercase text-accent dark:text-accentDark font-semibold text-xs sm:text-sm">
-          {blog.tags[0]}
-        </span>
+        <div className="flex w-full">
+          <span className="inline-block uppercase text-accent dark:text-accentDark font-semibold text-xs sm:text-sm border rounded-md w-fit px-2 py-0.5">
+            {blog.tags[0]}
+          </span>
+        </div>
 
         <Link href={blog.url} className="inline-block my-1">
           <h2 className="font-semibold capitalize text-base sm:text-lg">
