@@ -1,0 +1,73 @@
+---
+title: "Por que uso Tailwind"
+description: Tailwind es un framework de CSS que ofrece flexibilidad, reutilización y velocidad en la creación de sitios web. Conocé cómo se utiliza en un ejemplo de una tarjeta de perfil de usuario.
+image: "../../public/blogs/tailwind-css.webp"
+publishedAt: "2024-01-01"
+updatedAt: "2024-01-01"
+author: "Cristian Ruben Figueroa Espinoza"
+isPublished: true
+tags: 
+- desarrollo web
+---
+
+## ¿Qué es Tailwind?
+
+¡Tailwind es un framework de CSS que se enfoca en un enfoque de utilizar clases muy específicas para dar estilos a elementos de HTML en lugar de definir estilos en hojas de estilo
+
+### Ventajas de Tailwind
+
+- Flexibilidad: al usar clases específicas, es más fácil combinarlas y modificarlas para lograr diferentes estilos sin tener que crear nuevos estilos en hojas de estilo.
+
+- Reutilización: al usar clases específicas, es más fácil reutilizar estilos en diferentes partes del sitio web sin tener que copiar y pegar código.
+
+- Velocidad: al no tener que definir estilos en hojas de estilo, el código de la página web se carga más rápido y se puede trabajar de manera más eficiente.
+
+## ¿Cómo se usa Tailwind?
+
+A continuación, se muestra un ejemplo de una tarjeta de usuario que se ha creado usando Tailwind:
+
+```jsx
+<div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+  <div className="relative flex items-center px-6 py-5 space-x-3 bg-white border border-gray-300 rounded-lg shadow-sm focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:border-gray-400">
+    <div className="flex-shrink-0">
+    <Image 
+      className="w-10 h-10 rounded-full" 
+      fill
+      src="https://www.cristianfigueroa.dev/images/portrait.webp" 
+      alt="Avatar usuario"
+    />
+    </div>
+    <div className="flex-1 min-w-0">
+      <a href="#" className="no-underline">
+        <span className="absolute inset-0" aria-hidden="true"></span>
+        <p className="text-sm font-medium text-gray-900 my-0">Cristian Ruben</p>
+        <p className="text-sm text-gray-500 truncate my-0">Lorem ipsum dolors</p>
+      </a>
+    </div>
+  </div>
+```
+
+<div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+  <div className="relative flex items-center space-x-3 rounded-lg border border-neutral-300 bg-white px-6 focus-within:ring-2 hover:border-red-400">
+    <div className="">
+      <Image
+        className="h-12 w-12 rounded-md"
+        src="/favicon.jpg"
+        alt="Avatar usuario"
+        width={672}
+        height={258}
+      />
+    </div>
+    <div>
+      <p className="my-0 text-base font-medium text-neutral-900">Cristian Ruben</p>
+      <p className=" text-sm text-neutral-500">
+        <span>Lorem ipsum dolors</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+Este código muestra una sección de una interfaz de usuario que representa un perfil de usuario. La sección tiene una estructura de cuadrícula con una sola columna en dispositivos pequeños y dos columnas en dispositivos más grandes. La sección contiene una imagen redonda del avatar del usuario, su nombre y una descripción breve.
+
+En resumen, Tailwind es una herramienta muy útil para dar estilos a elementos de HTML de manera rápida y flexible. Con su enfoque en clases específicas, es posible crear diseños complejos sin tener que crear nuevos estilos en hojas de estilo y sin tener que copiar y pegar código repetid

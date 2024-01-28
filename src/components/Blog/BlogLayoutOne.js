@@ -14,9 +14,8 @@ const BlogLayoutOne = ({ blog }) => {
       <Image
         src={blog.image.filePath.replace("../public", "")}
         alt={blog.title}
-        width={blog.image.width}
-        height={blog.image.height}
-        className="w-full h-full object-center object-cover rounded-md group-hover:scale-105 transition-all ease duration-300"
+        fill
+        className="w-full h-full object-center object-cover rounded-md"
       />
 
       <div className="w-full absolute bottom-0 p-4 xs:p-6 sm:p-10 z-20">
