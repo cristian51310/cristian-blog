@@ -18,7 +18,7 @@ const BlogLayoutThree = ({ blog }) => {
 
       <div className="flex flex-col w-full mt-4">
         <span className="uppercase text-accent dark:text-accentDark font-semibold text-xs sm:text-sm border rounded-md w-fit px-2 py-0.5">
-          {blog.tags[0]}
+          {blog.tags[0] === "diseno" ? "diseño" : blog.tags[0]}
         </span>
 
         <Link href={blog.url} className="inline-block my-1">
