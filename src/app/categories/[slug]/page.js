@@ -27,7 +27,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   return {
-    title: `${params.slug.replaceAll("-", " ")} Blogs`,
+    title: `${params.slug.replaceAll("-", " ")} Publicaciones`,
     description: `Learn more about ${params.slug === "all" ? "web development" : params.slug} through our collection of expert blogs and tutorials`,
   };
 }
@@ -40,20 +40,20 @@ const CategoryPage = ({ params }) => {
       if (!allCategories.includes(slugified)) {
         allCategories.push(slugified);
       }
-      if (params.slug === "all") {
-        return true;
-      }
+
+      if (params.slug === "all") return true;
+
       return slugified === params.slug;
     });
   });
 
   return (
-    <article className="mt-12 flex flex-col text-dark dark:text-light">
+    <article className="my-8 mb-32 flex flex-col text-dark dark:text-light">
 
-      <div className=" px-5 sm:px-10  md:px-24  sxl:px-32 flex flex-col">
+      <div className="px-5 sm:px-10 md:px-24 sxl:px-32 flex flex-col">
         <h1 className="mt-6 font-semibold text-2xl md:text-4xl lg:text-5xl">#{params.slug}</h1>
-        <span className="mt-2 inline-block">
-          Discover more categories and expand your knowledge!
+        <span className="mt-3">
+          Descubre más categorías y expande tu conocimiento!
         </span>
       </div>
 

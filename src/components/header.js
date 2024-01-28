@@ -3,10 +3,9 @@ import { GithubIcon, LinkedinIcon, TwitterIcon } from "./Icons";
 import Logo from "./logo";
 import ThemeSwitch from "./theme-switch";
 
-const Header = () => {
-
+export default function Header() {
   return (
-    <header className="w-full p-4 px-5 sm:px-10 flex items-center justify-between">
+    <header className="w-full p-6 px-5 sm:px-10 md:px-24 sxl:px-32 flex items-center justify-between">
       <Logo />
 
       <ThemeSwitch />
@@ -37,5 +36,3 @@ const Header = () => {
     </header>
   )
 }
-
-export default Header;
