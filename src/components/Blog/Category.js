@@ -11,7 +11,9 @@ const Category = ({ link = "#", name, active, ...props }) => {
         active ? "bg-dark text-light dark:bg-light dark:text-dark" : "bg-light text-dark dark:bg-dark dark:text-light"
       )}
     >
-      #{name}
+      {name === "all" && "#todas-las-categorias"}
+      {name === "diseno" && "#diseño"}
+      {name !== "all" && name !== "diseno" && `#${name}`}
     </Link>
   );
 };

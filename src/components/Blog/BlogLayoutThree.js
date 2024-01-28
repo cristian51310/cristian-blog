@@ -12,7 +12,7 @@ const BlogLayoutThree = ({ blog }) => {
           alt={blog.title}
           width={blog.image.width}
           height={blog.image.height}
-          className=" aspect-[4/3] w-full h-full object-cover object-center  group-hover:scale-110 transition-all ease duration-300 "
+          className="md:aspect-[4/3] aspect-video w-full h-full object-cover object-center  group-hover:scale-110 transition-all ease duration-300 "
         />
       </Link>
 

@@ -1,6 +1,5 @@
 import { cx } from "@/src/utils";
 import Link from "next/link";
-import React from "react";
 
 const Tag = ({ link = "#", name, ...props }) => {
   return (
@@ -11,7 +10,7 @@ const Tag = ({ link = "#", name, ...props }) => {
         props.className
       )}
     >
-      {name}
+      {name === "diseno" ? "Diseño" : name}
     </Link>
   );
 };

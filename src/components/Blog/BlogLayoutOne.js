@@ -32,6 +32,10 @@ const BlogLayoutOne = ({ blog }) => {
             </TextDecoration>
           </h2>
         </Link>
+
+        <p className='inline-block mt-4 md:text-lg font-in text-light'>
+          {blog.description}
+        </p>
       </div>
     </div>
   );

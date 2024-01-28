@@ -144,7 +144,7 @@ export default function BlogPage({ params }) {
                             data-[level=three]:pl-3 sm:data-[level=three]:pl-3
                             flex items-center justify-start
                           ">
-
+                            
                           {heading.level === "three" && (
                             <span className="flex w-1 h-1 rounded-full bg-dark mr-2">
                               &nbsp;
@@ -163,6 +163,7 @@ export default function BlogPage({ params }) {
             <RenderMdx blog={blog} />
           </div>
         </Section>
+
       </article>
     </>
 

@@ -7,7 +7,7 @@ const RecentPosts = ({ blogs }) => {
   const sortedBlogs = sortBlogs(blogs);
   return (
     <Section>
-      <div className="w-full flex  justify-between">
+      <div className="w-full flex md:flex-row flex-col gap-3 justify-between">
         <h2 className="w-fit inline-block font-bold capitalize text-2xl md:text-4xl text-dark dark:text-light">
           Publicaciones Recientes
         </h2>
