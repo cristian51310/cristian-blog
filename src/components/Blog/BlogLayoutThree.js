@@ -12,7 +12,7 @@ const BlogLayoutThree = ({ blog }) => {
           alt={blog.title}
           width={blog.image.width}
           height={blog.image.height}
-          className="md:aspect-[4/3] aspect-video w-full h-full object-cover object-center  group-hover:scale-110 transition-all ease duration-300 "
+          className="md:aspect-[4/3] aspect-video w-full h-full object-cover object-center group-hover:scale-110 transition-all ease duration-300 "
         />
       </Link>
 
@@ -22,7 +22,7 @@ const BlogLayoutThree = ({ blog }) => {
         </span>
 
         <Link href={blog.url} className="inline-block my-1">
-          <h2 className="font-semibold capitalize  text-base sm:text-lg">
+          <h2 className="font-semibold capitalize text-base sm:text-lg">
             <TextDecoration>
               {blog.title}
             </TextDecoration>
