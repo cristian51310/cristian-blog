@@ -1,6 +1,4 @@
-import siteMetadata from "@/src/utils/siteMetaData";
-import Link from "next/link";
-import { GithubIcon, LinkedinIcon, TwitterIcon } from "./Icons";
+import SocialIcons from "./social-icons";
 
 const Footer = () => {
   return (
@@ -10,31 +8,8 @@ const Footer = () => {
         Tienes algo que quieras compartir?
       </h3>
 
-      <div className="flex items-center mt-6 gap-4">
-        <a
-          href={siteMetadata.linkedin}
-          className="inline-block w-6 h-6"
-          aria-label="Reach out to me via LinkedIn"
-          target="_blank"
-        >
-          <LinkedinIcon className="hover:scale-125 transition-all ease duration-200" />
-        </a>
-        <a
-          href={siteMetadata.twitter}
-          className="inline-block w-6 h-6"
-          aria-label="Reach out to me via Twitter"
-          target="_blank"
-        >
-          <TwitterIcon className="hover:scale-125 transition-all ease duration-200" />
-        </a>
-        <a
-          href={siteMetadata.github}
-          className="inline-block w-6 h-6 fill-light"
-          aria-label="Check my profile on Github"
-          target="_blank"
-        >
-          <GithubIcon className="fill-light dark:fill-dark  hover:scale-125 transition-all ease duration-200" />
-        </a>
+      <div className="mt-6">
+        <SocialIcons inFooter />
       </div>
 
       <div className="w-full mt-8 md:mt-12 relative font-medium border-t border-solid border-light py-5 flex flex-col md:flex-row items-center justify-between">

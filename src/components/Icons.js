@@ -164,10 +164,10 @@ export const MoonIcon = ({ className, ...rest }) => (
     height="24"
     viewBox="0 0 24 24"
     {...rest}
-    className={cx("w-full h-auto", className)}
+    className={cx(className)}
   >
     <g
-      fill="none"
+      fill="currentColor"
       stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"

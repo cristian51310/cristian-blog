@@ -11,16 +11,16 @@ export default function ThemeSwitch() {
     <button
       onClick={() => setMode(mode === "light" ? "dark" : "light")}
       className={cx(
-        "w-6 h-6 flex items-center justify-center rounded-full p-1",
-        mode === "light" && "bg-dark text-light",
-        mode === "dark" && "bg-light text-dark"
+        "w-10 h-10 flex items-center justify-center rounded-md p-2.5",
+        mode === "light" && "bg-dark/30 text-purple-600",
+        mode === "dark" && "bg-light/30 text-amber-500"
       )}
       aria-label="theme-switcher"
     >
       {mode === "light" ? (
-        <MoonIcon className="fill-dark" />
+        <MoonIcon />
       ) : (
-        <SunIcon className="fill-dark" />
+        <SunIcon />
       )}
     </button>
   )
