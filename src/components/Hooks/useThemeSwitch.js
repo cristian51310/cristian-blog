@@ -45,8 +45,6 @@ export function useThemeSwitch() {
   useEffect(() => {
     toggleTheme(mode)
   }, [mode])
-  
-
 
   return [mode, setMode]
 }
