@@ -19,7 +19,7 @@ const RecentPosts = ({ blogs }) => {
         </Link>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-10 mt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 my-10">
         {sortedBlogs.slice(4, 10).map((blog, index) => {
           return (
             <article key={index} className="col-span-1 row-span-1 relative">

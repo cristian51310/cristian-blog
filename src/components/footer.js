@@ -12,7 +12,7 @@ const Footer = () => {
         <SocialIcons inFooter />
       </div>
 
-      <div className="w-full mt-8 md:mt-12 relative font-medium border-t border-solid border-light py-5 flex flex-col md:flex-row items-center justify-between">
+      <div className="w-full mt-8 md:mt-12 relative font-medium border-t border-light dark:border-black py-5 flex flex-col md:flex-row items-center justify-between">
         <span className="text-center">
           &copy; Todos los derechos reservados.
         </span>
