@@ -13,9 +13,9 @@ const HomeCoverSection = ({ blogs }) => {
 
   return (
     <Section>
-      <article className='flex flex-col items-start justify-end relative h-[40vh] sm:h-[50vh]'>
+      <article className='flex flex-col w-full items-start justify-end relative h-[40vh] sm:h-[50vh]'>
 
-        <div className='absolute top-0 left-0 bottom-0 right-0 h-full bg-gradient-to-b from-transparent from-0% to-dark/90 rounded-md z-0' />
+        <div className='absolute top-0 left-0 bottom-0 right-0 h-full bg-gradient-to-b from-transparent from-0% to-dark/90 z-0 border border-dark/40 dark:border-white/30 rounded-md' />
 
         <Image
           src={blog.image.filePath.replace("../public", "")}

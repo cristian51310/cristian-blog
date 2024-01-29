@@ -8,14 +8,14 @@ const BlogLayoutTwo = ({ blog }) => {
     <div className="group grid grid-cols-12 gap-4 items-start text-dark dark:text-light">
       <Link
         href={blog.url}
-        className=" col-span-12 lg:col-span-6 h-full rounded-md overflow-hidden"
+        className=" col-span-12 lg:col-span-6 h-full overflow-hidden border border-dark/40 dark:border-white/60 rounded-md"
       >
         <Image
           src={blog.image.filePath.replace("../public", "")}
           alt={blog.title}
           width={blog.image.width}
           height={blog.image.height}
-          className="md:aspect-video aspect-video h-full w-fit object-cover object-center group-hover:scale-110 transition-all ease duration-300"
+          className="md:aspect-video aspect-video h-full w-fit object-cover object-center group-hover:scale-110 transition-all ease duration-300 "
         />
       </Link>
 

@@ -6,7 +6,7 @@ import TextDecoration from "../text-decoration";
 const BlogLayoutThree = ({ blog }) => {
   return (
     <div className="group flex flex-col items-center text-dark dark:text-light">
-      <Link href={blog.url} className="h-full rounded-md overflow-hidden">
+      <Link href={blog.url} className="h-full rounded-md overflow-hidden  border border-dark/40 dark:border-white/30 ">
         <Image
           src={blog.image.filePath.replace("../public", "")}
           alt={blog.title}

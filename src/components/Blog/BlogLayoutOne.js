@@ -8,7 +8,7 @@ const BlogLayoutOne = ({ blog }) => {
   return (
     <div className="group flex flex-col overflow-hidden rounded-md h-full">
       <div
-        className="absolute top-0 left-0 bottom-0 right-0 h-full bg-gradient-to-b from-transparent from-0% to-dark/90 rounded-md z-10"
+        className="absolute top-0 left-0 bottom-0 right-0 h-full bg-gradient-to-b from-transparent from-0% to-dark/90 rounded-md z-10 border border-dark/40 dark:border-white/30"
       />
 
       <div className="h-80">
@@ -16,7 +16,7 @@ const BlogLayoutOne = ({ blog }) => {
           src={blog.image.filePath.replace("../public", "")}
           alt={blog.title}
           fill
-          className="w-full h-full object-center object-cover rounded-md aspect-square"
+          className="w-full h-full object-center object-cover aspect-square rounded-md"
         />
       </div>
 
